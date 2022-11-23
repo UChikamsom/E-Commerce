@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/bg-img.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-image-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 4% 0 3% 0;
+    padding: 1.5% 3%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo-img {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.logo {
+    width: 15%;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: space-between;
+    width: 49%;
+}
+
+.searchicons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 27%;
+}
+
+.svg-div {
+    display: flex;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.menu:hover {
+    color: orange;
+}
+
+.svg-div:hover {
+    color: orange;
+}
+
+.svg1 {
+    margin: 3px 3px;
+}
+
+.svg2 {
+    margin: 5px 5px;
+}
+
+.menu {
+    font-size: larger;
+}
+
+.searchicons ul {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0 5%;
+}
+
+.search-input {
+    width: 227%;
+    padding: 5% 5% 5% 20%;
+    font-size: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.search-div {
+    position: absolute;
+}
+
+.search-icon {
+    position: relative;
+    top: 28%;
+    left: 85%;
+}
+
+.search-button button {
+    padding: 24%;
+    border-radius: 5px;
+    border: 1px solid orange;
+    background-color: orange;
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.search-button {
+    width: 10%;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content {
+    display: flex;
+}
+
+.dropdown-content a {
+    margin-left: 20px;
+}
+
+.account-dropdown {
+    background-color: white;
+    line-height: 280%;
+    width: 15%;
+    display: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0 1%;
+}
+
+.account:hover .account-dropdown {
+    display: block;
+    position: absolute;
+}
+
+.sign-in {
+    border: 2px solid orange;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    padding: 5% 26%;
+    border-radius: 5px;
+}
+
+.help-dropdown {
+    background-color: white;
+    display: none;
+    line-height: 250%;
+    width: 16%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.help:hover .help-dropdown {
+    display: block;
+    position: absolute;
+}
+
+.help-dropdown li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 0 1%;
+}
+
+.live-chat {
+    display: flex;
+    border: 2px solid orange;
+    background-color: orange;
+    border-radius: 5px;
+    margin: 5% 0;
+    padding: 0 10%;
+    color: white;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.live-chat a {
+    color: white;
+    font-weight: bold;
+}
+
+.live-chat svg {
+    margin-top: 35%;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgba(40, 40, 40);
+    padding: 2% 5%;
+}
+
+.container1-logo {
+    width: 30%;
+}
+
+.container1-logo img {
+    width: 50%;
+    margin-top: 5%;
+}
+
+.container1-newsletter {
+    width: 50%;
+}
+
+.container1-newsletter h3 {
+    margin-bottom: 2%;
+    color: white;
+}
+
+.container1-newsletter p {
+    margin-bottom: 3%;
+    color: white;
+}
+
+.email-container {
+    display: flex;
+}
+
+.email input {
+    width: 125%;
+    padding: 5% 5% 5% 20%;
+    font-size: 18px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: rgba(40, 40, 40, 0.3);
+}
+
+.email {
+    margin-right: 13%;
+}
+
+.email-div {
+    position: relative;
+}
+
+.email-icon {
+    position: absolute;
+    right: 69%;
+    bottom: -21.5%;
+    color: white;
+}
+
+.male-button button {
+    padding: 25% 40%;
+    border-radius: 3px;
+    border: 1px solid white;
+    color: white;
+    font-weight: bolder;
+    font-size: 12px;
+    background-color: rgba(40, 40, 40);
+    cursor: pointer;
+}
+
+.male-button {
+    width: 10%;
+    margin-right: 7%;
+}
+
+.male-button button:hover {
+    color: orange;
+    border: 1px solid orange;
+}
+
+.female-button button {
+    padding: 25% 40%;
+    border-radius: 3px;
+    border: 1px solid white;
+    color: white;
+    font-weight: bolder;
+    font-size: 12px;
+    background-color: rgba(40, 40, 40);
+    cursor: pointer;
+}
+
+.female-button button:hover {
+    color: orange;
+    border: 1px solid orange;
+}
+
+.female-button {
+    width: 10%;
+}
+
+.container1-app {
+    width: 35%;
+}
+
+.jumia-star {
+    width: 15%;
+}
+
+.jumia-star img {
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 7px;
+}
+
+.jumia-star-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.jumia-star-container h3 {
+    margin-bottom: 3%;
+    color: white;
+}
+
+.jumia-star-container p {
+    color: white;
+}
+
+.app-div {
+    display: flex;
+}
+
+.apple-store {
+    margin: 2% 5% 0 3%;
+    width: 25%;
+}
+
+.apple-store img {
+    width: 115%;
+    border-radius: 6px;
+}
+
+.apple-store:hover {
+    margin-top: 0.3%;
+    transition: 0.3s;
+}
+
+.google-playstore {
+    width: 25%;
+    margin-top: 1.8%;
+}
+
+.google-playstore img {
+    width: 123%;
+    border-radius: 8px;
+}
+
+.google-playstore:hover {
+    margin-top: 0.3%;
+    transition: 0.3s;
+}
+
+.container2 {
+    background-color: rgb(50, 50, 50);
+    padding: 1% 2.5% 5% 2.5%;
+}
+
+.container2-text {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.text a {
+    color: white;
+}
+
+.text p {
+    margin-bottom: 2%;
+}
+
+.text a:hover {
+    text-decoration: underline;
+}
+
+.text h3 {
+    padding: 5% 0;
+}
+
+.countries {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container2-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3%;
+}
+
+.social-media h3 {
+    color: white;
+}
+
+.payment-methods h3 {
+    color: white;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.media-icons svg {
+    margin: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.media-icons svg:hover {
+    color: orange;
+}
