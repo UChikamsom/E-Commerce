@@ -10,161 +10,422 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <img class="logo-img" src="images/jumia logo.png" alt="jumia logo" />
-        </div>
-        <div class="searchbar">
-            <div class="searchbar-div">
-                <div class="search-div">
-                    <input class="search-input" type="text" placeholder="Search products, brands and categories">
-                </div>
-                <div class="search-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg>
-
-                </div>
-            </div>
-            <div class="search-button">
-                <button>SEARCH</button>
-            </div>
-        </div>
-        <div class="searchicons">
-            <div class="account">
-                <ul>
-                    <li>
-                        <div class="svg-div">
-                            <div><svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-                                </svg>
-                            </div>
-                            <div>
-                                <a class="menu" href="">Account </a>
-                            </div>
-                            <div><svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-                                    <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div class="account-dropdown">
-                            <ul>
-                                <li><a class="sign-in" href="">SIGN IN </a></li>
-                                <hr>
-                                <div>
-                                    <li>
-                                        <div class="dropdown-content">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <a href="">My Account</a>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                </div>
-                                <div>
-                                    <li>
-                                        <div class="dropdown-content">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-box2-heart" viewBox="0 0 16 16">
-                                                    <path d="M8 7.982C9.664 6.309 13.825 9.236 8 13 2.175 9.236 6.336 6.31 8 7.982Z"/>
-                                                    <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5Zm0 1H7.5v3h-6l2.25-3ZM8.5 4V1h3.75l2.25 3h-6ZM15 5v10H1V5h14Z"/>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <a href="">Orders</a>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                </div>
-                                <div>
-                                    <li>
-                                        <div class="dropdown-content">
-                                            <div>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <a href="">Saved Items</a>
-                                            </div>
-                                        </div>
-
-                                    </li>
-
-                                </div>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="help">
-                <ul>
-                    <li>
-                        <div class="svg-div">
-                            <div><svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
-                                    <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                </svg>
-                            </div>
-                            <div><a class="menu" href="">Help </a></div>
-                            <div><svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
-                                    <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div class="help-dropdown">
-                            <ul>
-                                <li><a href="">Help Center</a></li>
-                                <li><a href="">Place &amp; track Order</a></li>
-                                <li><a href="">Order Cancellation</a></li>
-                                <li><a href="">Returns &amp; Refunds</a></li>
-                                <li><a href="">Payment &amp; Jumia account</a></li>
-                                <hr>
-                                <li>
-                                    <div class="live-chat">
-                                        <div>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
-                                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <a href="">LIVE CHAT</a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="cart">
-                <ul>
-                    <li>
-                        <div class="svg-div">
-                            <div><svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                </svg>
-                            </div>
-                            <div><a class="menu" href="">Cart</a></div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
     <div class="bg-image">
-        <div class="bg-image-overlay"></div>
+        <div class="bg-image-overlay">
+            <div class="gif-file">
+                <div>
+                    <img src="images/GIF IMAGES/gif-10.gif" alt="gif file" />
+                </div>
+            </div>
+            <div class="navbar">
+                <div class="logo">
+                    <img class="logo-img" src="images/jumia logo.png" alt="jumia logo" />
+                </div>
+                <div class="searchbar">
+                    <div class="searchbar-div">
+                        <div class="search-div">
+                            <input class="search-input" type="text" placeholder="Search products, brands and categories">
+                        </div>
+                        <div class="search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div class="search-button">
+                        <button>SEARCH</button>
+                    </div>
+                </div>
+                <div class="searchicons">
+                    <div class="account">
+                        <ul>
+                            <li>
+                                <div class="svg-div">
+                                    <div><svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <a class="menu" href="">Account </a>
+                                    </div>
+                                    <div><svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                                            <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="account-dropdown">
+                                    <ul>
+                                        <li><a class="sign-in" href="">SIGN IN </a></li>
+                                        <hr>
+                                        <div>
+                                            <li>
+                                                <div class="dropdown-content">
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div>
+                                                        <a href="">My Account</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </div>
+                                        <div>
+                                            <li>
+                                                <div class="dropdown-content">
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-box2-heart" viewBox="0 0 16 16">
+                                                            <path d="M8 7.982C9.664 6.309 13.825 9.236 8 13 2.175 9.236 6.336 6.31 8 7.982Z"/>
+                                                            <path d="M3.75 0a1 1 0 0 0-.8.4L.1 4.2a.5.5 0 0 0-.1.3V15a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V4.5a.5.5 0 0 0-.1-.3L13.05.4a1 1 0 0 0-.8-.4h-8.5Zm0 1H7.5v3h-6l2.25-3ZM8.5 4V1h3.75l2.25 3h-6ZM15 5v10H1V5h14Z"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div>
+                                                        <a href="">Orders</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        </div>
+                                        <div>
+                                            <li>
+                                                <div class="dropdown-content">
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div>
+                                                        <a href="">Saved Items</a>
+                                                    </div>
+                                                </div>
+
+                                            </li>
+
+                                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="help">
+                        <ul>
+                            <li>
+                                <div class="svg-div">
+                                    <div><svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+                                            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        </svg>
+                                    </div>
+                                    <div><a class="menu" href="">Help </a></div>
+                                    <div><svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                                            <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="help-dropdown">
+                                    <ul>
+                                        <li><a href="">Help Center</a></li>
+                                        <li><a href="">Place &amp; track Order</a></li>
+                                        <li><a href="">Order Cancellation</a></li>
+                                        <li><a href="">Returns &amp; Refunds</a></li>
+                                        <li><a href="">Payment &amp; Jumia account</a></li>
+                                        <hr>
+                                        <li>
+                                            <div class="live-chat">
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
+                                                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                                        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <a href="">LIVE CHAT</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <ul>
+                            <li>
+                                <div class="svg-div">
+                                    <div><svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                        </svg>
+                                    </div>
+                                    <div><a class="menu" href="">Cart</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="gif-container">
+                <div class="gif-container1">
+                    <ul>
+                        <li>
+                            <div class="tooltip1">
+                                <a class="gif1" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop" viewBox="0 0 16 16">
+                                        <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"/>
+                                    </svg>Supermarket
+                                </a>
+                                <!--
+                                <div>
+                                    <span class="tooltiptext1">
+                                        <div class="supermarket-div">
+                                            <div class="supermarket-divA">
+                                                <div class="supermarket-div1">
+                                                    <h5>FOOD CUPBOARD</h5>
+                                                    
+                                                    <ul>
+                                                        <li>Grains &amp; Rice</li>
+                                                        <li>Pasta &amp; Noodles</li>
+                                                        <li>Breakfast foods</li>
+                                                        <li>Flours &amp; Meals</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="supermarket-div2">
+                                                    <h5>BABY PRODUCTS</h5>
+                                                    
+                                                    <ul>
+                                                        <li>Disposable diapers</li>
+                                                        <li>Cerals</li>
+                                                        <li>Baby Caariage</li>
+                                                        <li>Water flasks</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="supermarket-divB">
+                                                <div class="supermarket-div3">
+                                                    <h5>HOUSEHOLD CLEANING</h5>
+                                                    
+                                                    <ul>
+                                                        <li>Laundry</li>
+                                                        <li>Toilet papers</li>
+                                                        <li>Dish washing</li>
+                                                        <li>Cleaning tools</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="supermarket-div4">
+                                                    <h5>BEER, WINE &amp; SPIRITS</h5>
+                                                    
+                                                    <ul>
+                                                        <li>Beer</li>
+                                                        <li>Vodka</li>
+                                                        <li>Red wine</li>
+                                                        <li>Liquors</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="supermarket-divC">
+                                                <div class="supermarket-div4">
+                                                    <h5>HOUSEHOLD CLEANING</h5>
+                                                    
+                                                    <ul>
+                                                        <li>Laundry</li>
+                                                        <li>Toilet papers</li>
+                                                        <li>Dish washing</li>
+                                                        <li>Cleaning tools</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="supermarket-div5">
+                                                    <h5>BEER, WINE &amp; SPIRITS</h5>
+                                                    
+                                                    <ul>
+                                                        <li>Beer</li>
+                                                        <li>Vodka</li>
+                                                        <li>Red wine</li>
+                                                        <li>Liquors</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                    </span>
+                                </div>
+                                -->
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tooltip1">
+                                <a class="gif1" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hospital" viewBox="0 0 16 16">
+                                        <path d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Zm.25 1.75a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5Zm-11-4a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 9.75v-.5A.25.25 0 0 0 2.75 9h-.5Zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Z"/>
+                                        <path d="M5 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1V1Zm2 14h2v-3H7v3Zm3 0h1V3H5v12h1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3Zm0-14H6v1h4V1Zm2 7v7h3V8h-3Zm-8 7V8H1v7h3Z"/>
+                                    </svg>Health &amp; Beauty
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tooltip1">
+                                <a class="gif1" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                                        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+                                    </svg>Home &amp; Office
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tooltip1">
+                                <a class="gif1" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                    </svg>Phones &amp; Tablets
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tooltip1">
+                                <a class="gif1" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                                        <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
+                                    </svg>Computing
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tooltip1">
+                                <a class="gif1" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                                        <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+                                    </svg>Electronics
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tooltip1">
+                                <a class="gif1" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+                                        <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                    </svg>Baby Products
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tooltip1">
+                                <a class="gif1" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
+                                        <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"/>
+                                        <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+                                    </svg> Gaming
+
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tooltip1">
+                                <a class="gif1" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+                                        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+                                    </svg>Sporting Goods
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tooltip1">
+                                <a class="gif1" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                                        <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z"/>
+                                    </svg> Automobile
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tooltip1">
+                                <a class="gif1" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                    </svg>Other categories
+                                </a>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="gif-container2">
+                    <div>
+                        <img src="images/GIF IMAGES/GIF-1.gif" alt="gif image" />
+                    </div>
+                </div>
+                <div class="gif-container3">
+                    <div class="gif-container3a">
+                        <div>
+                            <img src="images/GIF IMAGES/gif 11.jpg" alt="gif file" />
+                        </div>
+                    </div>
+                    <div class="gif-container3b">
+                        <div>
+                            <img src="images/GIF IMAGES/gif 12.gif" alt="gif file" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pdt-container1">
+                <div class="pdt-container">
+                    <div>
+                        <img src="images/pdt1.png" alt="pdt image" />
+                        <p>Christmas Deals</p>
+                    </div>
+                    <div>
+                        <img src="images/pdt.png" alt="pdt image" />
+                        <p>Christmas Deals</p>
+                    </div>
+                    <div>
+                        <img src="images/pdt.png" alt="pdt image" />
+                        <p>Christmas Deals</p>
+                    </div>
+                    <div>
+                        <img src="images/pdt.png" alt="pdt image" />
+                        <p>Christmas Deals</p>
+                    </div>
+                    <div>
+                        <img src="images/pdt.png" alt="pdt image" />
+                        <p>Christmas Deals</p>
+                    </div>
+                    <div>
+                        <img src="images/pdt.png" alt="pdt image" />
+                        <p>Christmas Deals</p>
+                    </div>
+                    <div>
+                        <img src="images/pdt.png" alt="pdt image" />
+                        <p>Christmas Deals</p>
+                    </div>
+                    <div>
+                        <img src="images/pdt.png" alt="pdt image" />
+                        <p>Christmas Deals</p>
+                    </div>
+                    <div>
+                        <img src="images/pdt.png" alt="pdt image" />
+                        <p>Christmas Deals</p>
+                    </div>
+                    <div>
+                        <img src="images/pdt.png" alt="pdt image" />
+                        <p>Christmas Deals</p>
+                    </div>
+                    <div>
+                        <img src="images/pdt.png" alt="pdt image" />
+                        <p>Christmas Deals</p>
+                    </div>
+                    <div>
+                        <img src="images/pdt2.png" alt="pdt image" />
+                        <p>Christmas Deals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <footer>
         <div class="footer-container">
             <div class="container1">
@@ -172,15 +433,17 @@
                     <img src="images/jumia logo black.png" alt="Jumia logo" />
                 </div>
                 <div class="container1-newsletter">
-                    <h3>NEW TO JUMIA?</h3>
+                    <h5>NEW TO JUMIA?</h5>
                     <p>Subscribe to our newsletter to get updates on our latest offers!</p>
                     <div class="email-container">
                         <div class="email">
                             <div class="email-icon">
+                                <!--
                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                                     <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
                                     />
                                 </svg>
+                                -->
                             </div>
                             <div class="email-div">
                                 <input type="Email" placeholder="Enter Email Address">
@@ -200,7 +463,7 @@
                             <img src="images/jumia star3.png" alt="jumia star" />
                         </div>
                         <div>
-                            <h3>DOWNLOAD JUMIA FREE APP</h3>
+                            <h5>DOWNLOAD JUMIA FREE APP</h5>
                             <p>Get access to exclusive offers!</p>
                         </div>
                     </div>
@@ -218,7 +481,7 @@
             <div class="container2">
                 <div class="container2-text">
                     <div class="text">
-                        <h3>LET US HELP YOU</h3>
+                        <h5>LET US HELP YOU</h5>
                         <p><a href="">Help Center</a></p>
                         <p><a href="">Contact Us</a></p>
                         <p><a href="">How to shop on Jumia?</a></p>
@@ -230,7 +493,7 @@
                         <p><a href="">Dispute Resolution Policy</a></p>
                     </div>
                     <div class="text">
-                        <h3>ABOUT JUMIA</h3>
+                        <h5>ABOUT JUMIA</h5>
                         <p><a href="">About Us</a></p>
                         <p><a href="">Jumia careers</a></p>
                         <p><a href="">Jumia Express</a></p>
@@ -243,7 +506,7 @@
                         <p><a href="">Black Friday 2022</a></p>
                     </div>
                     <div class="text">
-                        <h3>MAKE MONEY WITH JUMIA</h3>
+                        <h5>MAKE MONEY WITH JUMIA</h5>
                         <p><a href="">Sell on Jumia</a></p>
                         <p><a href="">Become a Sales Consultant</a></p>
                         <p><a href="">Become a Jumia Vendor Service Provider</a></p>
@@ -252,7 +515,7 @@
                         <p><a href="">Join the Jumia KOL Program</a></p>
                     </div>
                     <div class="text">
-                        <h3>JUMIA INTERNATIONAL</h3>
+                        <h5>JUMIA INTERNATIONAL</h5>
                         <div class="countries">
                             <div>
                                 <p><a href="">Algeria</a></p>
@@ -274,7 +537,7 @@
                 </div>
                 <div class="container2-icons">
                     <div class="social-media">
-                        <h3>JOIN US ON</h3>
+                        <h5>JOIN US ON</h5>
                         <div class="media-icons">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -309,7 +572,7 @@
                         </div>
                     </div>
                     <div class="payment-methods">
-                        <h3>PAYMENT METHODS &amp; DELIVERY PARTNERS</h3>
+                        <h5>PAYMENT METHODS &amp; DELIVERY PARTNERS</h5>
                         <div></div>
                         <div></div>
                         <div></div>

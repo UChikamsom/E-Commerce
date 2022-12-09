@@ -12,6 +12,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
+    font-family: helvetica;
 }
 
 .bg-image-overlay {
@@ -20,12 +21,16 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.gif-file {
+    margin: 0 6.5%;
+}
+
 .navbar {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    margin: 4% 0 3% 0;
-    padding: 1.5% 3%;
+    margin: 0.3% 0 3% 0;
+    padding: 0.6% 3%;
     background-color: white;
     position: fixed;
     z-index: 1;
@@ -37,13 +42,13 @@ body {
 }
 
 .logo {
-    width: 15%;
+    width: 12%;
 }
 
 .searchbar {
     display: flex;
     justify-content: space-between;
-    width: 49%;
+    width: 45%;
 }
 
 .searchicons {
@@ -67,27 +72,27 @@ body {
 }
 
 .svg1 {
-    margin: 3px 3px;
+    margin: 0 3px;
 }
 
 .svg2 {
-    margin: 5px 5px;
+    margin: 2px 5px;
 }
 
 .menu {
-    font-size: larger;
+    font-size: 15px;
 }
 
 .searchicons ul {
     list-style: none;
-    margin-top: 10px;
+    margin-top: 8px;
     padding: 0 5%;
 }
 
 .search-input {
-    width: 227%;
-    padding: 5% 5% 5% 20%;
-    font-size: 20px;
+    width: 230%;
+    padding: 4% 4% 4% 22%;
+    font-size: 17px;
     border: 1px solid grey;
     border-radius: 5px;
 }
@@ -98,12 +103,12 @@ body {
 
 .search-icon {
     position: relative;
-    top: 28%;
+    top: 20%;
     left: 85%;
 }
 
 .search-button button {
-    padding: 24%;
+    padding: 18%;
     border-radius: 5px;
     border: 1px solid orange;
     background-color: orange;
@@ -199,12 +204,16 @@ a {
     margin-top: 35%;
 }
 
+footer {
+    margin-top: 15%;
+}
+
 .container1 {
     display: flex;
     justify-content: space-around;
     width: 100%;
     background-color: rgba(40, 40, 40);
-    padding: 2% 5%;
+    padding: 1.5% 3% 1.5% 7%;
 }
 
 .container1-logo {
@@ -212,15 +221,15 @@ a {
 }
 
 .container1-logo img {
-    width: 50%;
-    margin-top: 5%;
+    width: 45%;
+    margin-top: 2%;
 }
 
 .container1-newsletter {
-    width: 50%;
+    width: 55%;
 }
 
-.container1-newsletter h3 {
+.container1-newsletter h5 {
     margin-bottom: 2%;
     color: white;
 }
@@ -228,6 +237,7 @@ a {
 .container1-newsletter p {
     margin-bottom: 3%;
     color: white;
+    font-size: 13px;
 }
 
 .email-container {
@@ -235,7 +245,7 @@ a {
 }
 
 .email input {
-    width: 125%;
+    width: 130%;
     padding: 5% 5% 5% 20%;
     font-size: 18px;
     border: 1px solid grey;
@@ -253,9 +263,10 @@ a {
 
 .email-icon {
     position: absolute;
-    right: 69%;
-    bottom: -21.5%;
+    right: 67%;
+    bottom: -17.7%;
     color: white;
+    width: 1.5%;
 }
 
 .male-button button {
@@ -271,7 +282,7 @@ a {
 
 .male-button {
     width: 10%;
-    margin-right: 7%;
+    margin-right: 5%;
 }
 
 .male-button button:hover {
@@ -300,31 +311,31 @@ a {
 }
 
 .container1-app {
-    width: 35%;
+    width: 30%;
 }
 
 .jumia-star {
-    width: 15%;
+    width: 10%;
+    margin-right: 5%;
 }
 
 .jumia-star img {
     width: 100%;
-    margin-top: 5%;
     border-radius: 7px;
 }
 
 .jumia-star-container {
     display: flex;
-    justify-content: space-around;
 }
 
-.jumia-star-container h3 {
+.jumia-star-container h5 {
     margin-bottom: 3%;
     color: white;
 }
 
 .jumia-star-container p {
     color: white;
+    font-size: 13px;
 }
 
 .app-div {
@@ -332,8 +343,8 @@ a {
 }
 
 .apple-store {
-    margin: 2% 5% 0 3%;
-    width: 25%;
+    margin: 2% 7% 0 3%;
+    width: 30%;
 }
 
 .apple-store img {
@@ -347,7 +358,7 @@ a {
 }
 
 .google-playstore {
-    width: 25%;
+    width: 30%;
     margin-top: 1.8%;
 }
 
@@ -363,28 +374,29 @@ a {
 
 .container2 {
     background-color: rgb(50, 50, 50);
-    padding: 1% 2.5% 5% 2.5%;
+    padding: 2% 2% 5% 2%;
 }
 
 .container2-text {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     color: white;
 }
 
 .text a {
-    color: white;
+    color: rgba(157, 189, 180, 1);
 }
 
 .text p {
-    margin-bottom: 2%;
+    margin: 5% 0 5% 0;
+    font-size: 12px;
 }
 
 .text a:hover {
     text-decoration: underline;
 }
 
-.text h3 {
+.text h5 {
     padding: 5% 0;
 }
 
@@ -399,11 +411,11 @@ a {
     margin: 3%;
 }
 
-.social-media h3 {
+.social-media h5 {
     color: white;
 }
 
-.payment-methods h3 {
+.payment-methods h5 {
     color: white;
 }
 
@@ -420,4 +432,154 @@ a {
 
 .media-icons svg:hover {
     color: orange;
+}
+
+.gif-container {
+    padding-top: 5%;
+    margin: 1% 6%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gif1 {
+    color: black;
+}
+
+.gif1 svg {
+    padding-right: 2%;
+}
+
+li {
+    list-style: none;
+}
+
+.gif-container1 {
+    width: 18%;
+    height: 64vh;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5% 1%;
+}
+
+.tooltip1 {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    height: 5.83vh;
+}
+
+
+/*
+.tooltiptext1 {
+    background-color: white;
+    margin-left: 64%;
+    width: 271%;
+    height: 64vh;
+    border-radius: 5px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.tooltip1:hover .tooltiptext1 {
+    visibility: visible;
+}
+
+.supermarket-div {
+    display: flex;
+}
+
+.supermarket-div h5 {
+    margin: 6px 0px;
+}
+
+.supermarket-div1 {
+    margin-bottom: 15%;
+}
+
+.supermarket-divA {
+    margin-right: 10%;
+}
+
+.supermarket-div3 {
+    margin-bottom: 12%;
+}
+
+.supermarket-div ul {
+    margin-top: 7%;
+}
+
+.supermarket-div li {
+    margin: 5px 0px;
+}
+*/
+
+.gif-container2 {
+    width: 59%;
+}
+
+.gif-container2 img {
+    width: 100%;
+    height: 64vh;
+    border-radius: 5px;
+}
+
+.gif-container3 {
+    width: 18%;
+    background-color: transparent;
+}
+
+.gif-container3a {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 4%;
+}
+
+.gif-container3a img {
+    width: 100%;
+    height: 29vh;
+    border-radius: 5px;
+}
+
+.gif-container3b {
+    width: 100%;
+    height: 35vh;
+}
+
+.gif-container3b img {
+    width: 100%;
+    height: 32vh;
+    border-radius: 5px;
+}
+
+.pdt-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pdt-container1 {
+    height: 37vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: #fff;
+    margin: 0 7%;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.pdt-container {
+    width: 170%;
+}
+
+.pdt-container div:hover {
+    transform: scale(1.03);
+}
+
+.pdt-container img {
+    width: 95%;
+}
+
+.pdt-container p {
+    text-align: center;
 }
